@@ -15,5 +15,6 @@ namespace BookBiz_Management_System.Models
         public int QOH { get; set; }
         public List<Author> Authors { get; set; }
         public int Category { get; set; }
+        public Publisher Publisher { get; set; }
     }
 }
