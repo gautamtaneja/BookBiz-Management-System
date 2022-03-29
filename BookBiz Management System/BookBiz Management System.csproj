@@ -69,6 +69,12 @@
       <DependentUpon>AddClient.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccess\DB.cs" />
+    <Compile Include="IC Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IC Dashboard.Designer.cs">
+      <DependentUpon>IC Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,18 +106,43 @@
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Publisher.cs" />
-    <Compile Include="Models\Role.cs" />
+
+    <Compile Include="Models\Roles.cs" />
+    <Compile Include="OCDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OCDashboard.Designer.cs">
+      <DependentUpon>OCDashboard.cs</DependentUpon>
+    </Compile>
+
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMDashboard.Designer.cs">
+      <DependentUpon>SMDashboard.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddAuthor.resx">
       <DependentUpon>AddAuthor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddClient.resx">
       <DependentUpon>AddClient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IC Dashboard.resx">
+      <DependentUpon>IC Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+
+    <EmbeddedResource Include="MISDashboard.resx">
+      <DependentUpon>MISDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OCDashboard.resx">
+      <DependentUpon>OCDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+
     <EmbeddedResource Include="Migrations\202203291610015_init.resx">
       <DependentUpon>202203291610015_init.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +155,7 @@
     <EmbeddedResource Include="MISDashboard.resx">
       <DependentUpon>MISDashboard.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -133,6 +165,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SMDashboard.resx">
+      <DependentUpon>SMDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
