@@ -140,6 +140,10 @@
             this.groupBox1.Controls.Add(this.lblEmail);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.pictureBox1);
+
+            this.groupBox1.Font = new System.Drawing.Font("Sitka Text", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(77, 47);
+
             this.groupBox1.Location = new System.Drawing.Point(103, 58);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
@@ -159,7 +163,10 @@
             this.Controls.Add(this.search_employee);
             this.Controls.Add(this.add_employee);
             this.Controls.Add(this.groupBox1);
+
+
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
             this.Name = "MISDashboard";
             this.Text = "MIS Deshboard";
             this.Load += new System.EventHandler(this.MISDashboard_Load);
