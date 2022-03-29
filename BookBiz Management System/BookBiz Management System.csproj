@@ -79,6 +79,14 @@
     <Compile Include="Migrations\202203291610015_init.designer.cs">
       <DependentUpon>202203291610015_init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203291615540_secondary.cs" />
+    <Compile Include="Migrations\202203291615540_secondary.designer.cs">
+      <DependentUpon>202203291615540_secondary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203291632345_thirs.cs" />
+    <Compile Include="Migrations\202203291632345_thirs.designer.cs">
+      <DependentUpon>202203291632345_thirs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MISDashboard.cs">
       <SubType>Form</SubType>
@@ -106,6 +114,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203291610015_init.resx">
       <DependentUpon>202203291610015_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203291615540_secondary.resx">
+      <DependentUpon>202203291615540_secondary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203291632345_thirs.resx">
+      <DependentUpon>202203291632345_thirs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MISDashboard.resx">
       <DependentUpon>MISDashboard.cs</DependentUpon>

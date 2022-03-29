@@ -21,5 +21,12 @@ namespace BookBiz_Management_System
         {
             lblEmail.Text = Login.email;
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
     }
 }

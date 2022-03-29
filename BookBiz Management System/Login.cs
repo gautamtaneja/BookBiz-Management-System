@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BookBiz_Management_System.DataAccess;
+using BookBiz_Management_System.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +15,8 @@ namespace BookBiz_Management_System
     public partial class Login : Form
     {
         public static string email=string.Empty;
+        public static Employee employee;
+        public static string role;
         public Login()
         {
             InitializeComponent();
@@ -20,13 +24,49 @@ namespace BookBiz_Management_System
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtEmail.Text == "admin" && txtPassword.Text == "admin")
+            using (var context = new DB())
             {
-                email = txtEmail.Text;
-                MISDashboard dashboard = new MISDashboard();
-                this.Hide();
-                dashboard.Show();
+                try
+                {
+                    employee = context.Employees.Where(x => x.Email == txtEmail.Text && x.Password == txtPassword.Text).FirstOrDefault();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                if(employee != null)
+                {
+                    role = context.Roles.Where(x => x.Id == employee.Role).FirstOrDefault().RoleName;
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Username or Password");
+                }
             }
+            if(employee != null)
+            {
+                this.Hide();
+                email = employee.FirstName + " " + employee.LastName;
+                switch (role)
+                {
+                    case "MIS Manager":
+                        MISDashboard dashboard = new MISDashboard();
+                        dashboard.Show();
+                        break;
+                    case "Sales Manager":
+                        MISDashboard dashboar = new MISDashboard();
+                        dashboar.Show();
+                        break;
+                    case "Inventory Controller":
+                        break;
+                    case "Order Clerks":
+                        break;
+                    default:
+                        break;
+                }
+            }
+            
+            
         }
     }
 }

@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.logout = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.lblEmail = new System.Windows.Forms.Label();
             this.add_employee = new System.Windows.Forms.Button();
             this.search_employee = new System.Windows.Forms.Button();
@@ -57,23 +57,24 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.pictureBox1.Location = new System.Drawing.Point(48, 42);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(932, 54);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // logout
+            // btnLogout
             // 
-            this.logout.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.logout.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logout.Location = new System.Drawing.Point(860, 47);
-            this.logout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.logout.Name = "logout";
-            this.logout.Size = new System.Drawing.Size(108, 44);
-            this.logout.TabIndex = 4;
-            this.logout.Text = "Logout";
-            this.logout.UseVisualStyleBackColor = false;
+            this.btnLogout.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnLogout.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(860, 47);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(108, 44);
+            this.btnLogout.TabIndex = 4;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // lblEmail
             // 
@@ -91,7 +92,7 @@
             this.add_employee.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.add_employee.Font = new System.Drawing.Font("Sitka Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_employee.Location = new System.Drawing.Point(327, 226);
-            this.add_employee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.add_employee.Margin = new System.Windows.Forms.Padding(4);
             this.add_employee.Name = "add_employee";
             this.add_employee.Size = new System.Drawing.Size(204, 64);
             this.add_employee.TabIndex = 6;
@@ -103,7 +104,7 @@
             this.search_employee.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.search_employee.Font = new System.Drawing.Font("Sitka Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_employee.Location = new System.Drawing.Point(641, 226);
-            this.search_employee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.search_employee.Margin = new System.Windows.Forms.Padding(4);
             this.search_employee.Name = "search_employee";
             this.search_employee.Size = new System.Drawing.Size(200, 64);
             this.search_employee.TabIndex = 7;
@@ -115,7 +116,7 @@
             this.add_user.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.add_user.Font = new System.Drawing.Font("Sitka Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_user.Location = new System.Drawing.Point(327, 363);
-            this.add_user.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.add_user.Margin = new System.Windows.Forms.Padding(4);
             this.add_user.Name = "add_user";
             this.add_user.Size = new System.Drawing.Size(204, 64);
             this.add_user.TabIndex = 8;
@@ -127,7 +128,7 @@
             this.search_user.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.search_user.Font = new System.Drawing.Font("Sitka Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_user.Location = new System.Drawing.Point(641, 363);
-            this.search_user.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.search_user.Margin = new System.Windows.Forms.Padding(4);
             this.search_user.Name = "search_user";
             this.search_user.Size = new System.Drawing.Size(200, 64);
             this.search_user.TabIndex = 9;
@@ -136,14 +137,14 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.logout);
+            this.groupBox1.Controls.Add(this.btnLogout);
             this.groupBox1.Controls.Add(this.lblEmail);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Location = new System.Drawing.Point(103, 58);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1028, 464);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
@@ -159,7 +160,7 @@
             this.Controls.Add(this.search_employee);
             this.Controls.Add(this.add_employee);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MISDashboard";
             this.Text = "MIS Deshboard";
             this.Load += new System.EventHandler(this.MISDashboard_Load);
@@ -174,7 +175,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button logout;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Button add_employee;
         private System.Windows.Forms.Button search_employee;
