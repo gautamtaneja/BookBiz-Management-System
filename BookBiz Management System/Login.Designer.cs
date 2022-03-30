@@ -192,11 +192,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1009, 534);
-=======
             this.ClientSize = new System.Drawing.Size(1067, 554);
->>>>>>> 7305ac4e125a3e0658ed7d8f7527ef0021dec36e
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Login";

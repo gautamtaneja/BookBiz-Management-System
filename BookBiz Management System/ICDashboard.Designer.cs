@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ICDashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IC_Dashboard));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnbooklist = new System.Windows.Forms.Button();
             this.btnaddbook = new System.Windows.Forms.Button();
