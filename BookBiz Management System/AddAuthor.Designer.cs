@@ -44,8 +44,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(799, 71);
+            this.pictureBox1.Size = new System.Drawing.Size(599, 58);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -53,10 +54,11 @@
             // 
             this.lblAuthor.AutoSize = true;
             this.lblAuthor.BackColor = System.Drawing.Color.Transparent;
-            this.lblAuthor.Font = new System.Drawing.Font("OpenSymbol", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAuthor.Location = new System.Drawing.Point(131, 9);
+            this.lblAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAuthor.Location = new System.Drawing.Point(98, 9);
+            this.lblAuthor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAuthor.Name = "lblAuthor";
-            this.lblAuthor.Size = new System.Drawing.Size(247, 52);
+            this.lblAuthor.Size = new System.Drawing.Size(187, 39);
             this.lblAuthor.TabIndex = 1;
             this.lblAuthor.Text = "Add Author";
             this.lblAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -66,71 +68,78 @@
             // 
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstName.Location = new System.Drawing.Point(59, 94);
+            this.lblFirstName.Location = new System.Drawing.Point(44, 76);
+            this.lblFirstName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(137, 29);
+            this.lblFirstName.Size = new System.Drawing.Size(106, 25);
             this.lblFirstName.TabIndex = 2;
             this.lblFirstName.Text = "First Name";
             // 
             // txtFirstName
             // 
             this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(62, 125);
+            this.txtFirstName.Location = new System.Drawing.Point(46, 102);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(350, 36);
+            this.txtFirstName.Size = new System.Drawing.Size(264, 30);
             this.txtFirstName.TabIndex = 3;
             // 
             // txtLastName
             // 
             this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.Location = new System.Drawing.Point(64, 211);
+            this.txtLastName.Location = new System.Drawing.Point(48, 171);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(350, 36);
+            this.txtLastName.Size = new System.Drawing.Size(264, 30);
             this.txtLastName.TabIndex = 5;
             // 
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
             this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLastName.Location = new System.Drawing.Point(61, 180);
+            this.lblLastName.Location = new System.Drawing.Point(46, 146);
+            this.lblLastName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(136, 29);
+            this.lblLastName.Size = new System.Drawing.Size(106, 25);
             this.lblLastName.TabIndex = 4;
             this.lblLastName.Text = "Last Name";
             // 
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(62, 297);
+            this.txtEmail.Location = new System.Drawing.Point(46, 241);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(350, 36);
+            this.txtEmail.Size = new System.Drawing.Size(264, 30);
             this.txtEmail.TabIndex = 7;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(59, 265);
+            this.lblEmail.Location = new System.Drawing.Point(44, 215);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(78, 29);
+            this.lblEmail.Size = new System.Drawing.Size(60, 25);
             this.lblEmail.TabIndex = 6;
             this.lblEmail.Text = "Email";
             // 
             // btnAddAuthor
             // 
             this.btnAddAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddAuthor.Location = new System.Drawing.Point(140, 372);
+            this.btnAddAuthor.Location = new System.Drawing.Point(105, 302);
+            this.btnAddAuthor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddAuthor.Name = "btnAddAuthor";
-            this.btnAddAuthor.Size = new System.Drawing.Size(184, 48);
+            this.btnAddAuthor.Size = new System.Drawing.Size(138, 39);
             this.btnAddAuthor.TabIndex = 8;
             this.btnAddAuthor.Text = "AddAuthor";
             this.btnAddAuthor.UseVisualStyleBackColor = true;
             // 
             // AddAuthor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 450);
+            this.ClientSize = new System.Drawing.Size(360, 366);
             this.Controls.Add(this.btnAddAuthor);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
@@ -140,6 +149,7 @@
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lblAuthor);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddAuthor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AddAuthor";
