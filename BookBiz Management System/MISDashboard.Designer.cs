@@ -147,6 +147,7 @@
             this.groupBox1.Controls.Add(this.user_email);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Font = new System.Drawing.Font("Sitka Text", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(77, 47);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(771, 377);
@@ -154,7 +155,7 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dashboard";
             // 
-            // Deshboard
+            // MISDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -164,7 +165,7 @@
             this.Controls.Add(this.search_employee);
             this.Controls.Add(this.add_employee);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Deshboard";
+            this.Name = "MISDashboard";
             this.Text = "MIS Deshboard";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
