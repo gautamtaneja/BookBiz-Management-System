@@ -19,7 +19,5 @@ namespace BookBiz_Management_System.Models
         public int PhoneNumber { get; set; }
         public int FaxNumber { get; set; }
         public int CreditLimit { get; set; }
-        public Role Role { get; set; }
-
     }
 }

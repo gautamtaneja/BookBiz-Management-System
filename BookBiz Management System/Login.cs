@@ -54,12 +54,19 @@ namespace BookBiz_Management_System
                         dashboard.Show();
                         break;
                     case "Sales Manager":
-                        MISDashboard dashboar = new MISDashboard();
-                        dashboar.Show();
+                        SMDashboard sMDashboard = new SMDashboard();
+                        sMDashboard.Show();
                         break;
                     case "Inventory Controller":
+                        ICDashboard ICDashboard = new ICDashboard();
+                        ICDashboard.Show();
                         break;
                     case "Order Clerks":
+                        OCDashboard oCDashboard = new OCDashboard();
+                        oCDashboard.Show(); 
+                        break;
+                    case "User":
+
                         break;
                     default:
                         break;

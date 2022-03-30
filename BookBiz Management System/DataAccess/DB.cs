@@ -17,6 +17,8 @@ namespace BookBiz_Management_System.DataAccess
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Publisher> Publishers { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<User> Users { get; set; }
+     
 
 
     }

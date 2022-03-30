@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BookBiz_Management_System
 {
-    public partial class IC_Dashboard : Form
+    public partial class ICDashboard : Form
     {
-        public IC_Dashboard()
+        public ICDashboard()
         {
             InitializeComponent();
         }

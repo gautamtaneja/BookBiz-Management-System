@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookBiz_Management_System.DataAccess;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,21 @@ namespace BookBiz_Management_System
 
         private void label1_Click(object sender, EventArgs e)
         {
+
+        }
+        public void AddAuthortodb()
+        {
+            using (var context = new DB())
+            {
+                context.Authors.Add(new Models.Author
+                {
+                    FirstName = "",
+                    LastName = "",
+                    Email= ""
+
+                });
+                context.SaveChanges();
+            }
 
         }
     }

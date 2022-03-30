@@ -107,7 +107,7 @@
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Publisher.cs" />
 
-    <Compile Include="Models\Roles.cs" />
+    <Compile Include="Models\Role.cs" />
     <Compile Include="OCDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,9 +152,7 @@
     <EmbeddedResource Include="Migrations\202203291632345_thirs.resx">
       <DependentUpon>202203291632345_thirs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MISDashboard.resx">
-      <DependentUpon>MISDashboard.cs</DependentUpon>
-    </EmbeddedResource>
+   
 
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
