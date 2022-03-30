@@ -16,5 +16,10 @@ namespace BookBiz_Management_System
         {
             InitializeComponent();
         }
+
+        private void MISDashboard_Load(object sender, EventArgs e)
+        {
+            lblEmail.Text = Login.email;
+        }
     }
 }
